@@ -6,13 +6,10 @@ export default function Intro() {
     <section>
         <div className="flex items-center justify-center">
             <div>
-                <Image src="https://media.licdn.com/dms/image/D4E03AQF0fxzeaYl5Ug/profile-displayphoto-shrink_800_800/0/1694239795358?e=1720656000&v=beta&t=T-HDbTtLnW1Dozul_CaGgWsjVoZx9nv81Y1ar5rm5wY"
-                alt="Nico portrait"
-                width="192"
-                height="192"
-                quality="95"
-                priority={true}
+                <img src="/portrait.jpg" width={192} height={192} 
+                    className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-x1"
                 />
+                <span className="text-4xl">✌️</span>
             </div>
         </div>
     </section>
