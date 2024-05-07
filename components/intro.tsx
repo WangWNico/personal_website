@@ -27,37 +27,23 @@ export default function Intro() {
                         className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
                     />
                 </motion.div>
-                
-                <motion.span
-                    className="absoolute bottom-0 left-0 text-4xl"
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 125,
-                        delay: 0.1,
-                        duration: 0.7,
-                    }}
-                >
-                    👋
-                </motion.span>
 
-                <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]"
+                <motion.h1 className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5]"
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                     >
                     <span className="font-extrabold">Hello, I'm Nico.</span> I'm a{" "}
-                    <span className="underline">
+                    <span className="font-medium italic">
                         Software Developer, Game Dev, Novice Cyber Security Analyst,
                         Website Designer, & Website Dev
                     </span>. I'm a{" "}
-                    <span className="italic">Computer Science Major -</span>{" "}
-                    <span className="font-bold">Sophomore at Rensselaer Polytechnic Institute</span>
+                    <span className="underline">Computer Science Major</span> - {" "}
+                    <span className="font-bold">Junior at Rensselaer Polytechnic Institute</span>
                     . I enjoy building <span className="italic">sites & apps</span>. My current focus is{" "}
                     <span className="underline">React (Next.js)</span>.
                 </motion.h1>
 
-                <motion.div className="flex flex-col sm:flex-row iterm-center justify-center gap-5 px-4 text-lg font-medium"
+                <motion.div className="flex flex-col sm:flex-row iterm-center justify-center gap-5 px-4 text-medium font-medium"
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
