@@ -5,8 +5,10 @@ import Project from "./project";
 
 export default function Projects() {
   return (
-    <section>
-      <SectionHeading> My projects </SectionHeading>
+    <section id="projects">
+      <div className="text-center">
+        <SectionHeading> My projects </SectionHeading>
+      </div>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
