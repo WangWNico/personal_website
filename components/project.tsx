@@ -28,10 +28,10 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className="group bg-gray-200 max-w-[42rem] border border-black/9 overflow-hidden sm:pr-8 relative sm:h-[20rem] 
+        className="bg-gray-200 max-w-[42rem] border border-black/9 overflow-hidden sm:pr-8 relative sm:h-[20rem] 
             rounded-[2.5rem] even:pl-8 hover:bg-gray-300 transition flex flex-col"
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
