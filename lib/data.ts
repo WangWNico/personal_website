@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/game_menu.png";
-import rmtdevImg from "@/public/Ceph_Poster.png";
-import wordanalyticsImg from "@/public/SysFlow_Poster.png";
+import gamemenuImg from "@/public/game_menu.png";
+import cephPoster from "@/public/Ceph_Poster.jpg";
+import sysflowPoster from "@/public/SysFlow_Poster.jpg";
 
 export const links = [
   {
@@ -62,29 +62,31 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Dungeon Game",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I attended a hackathon with some friends where we created a dungeon crawling rpg game.",
+    tags: ["Godot", "Git", "Adobe Photoshop", "Adobe Illustrator"],
+    imageUrl: gamemenuImg,
   },
   {
-    title: "rmtDev",
+    title: "SysFlow",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed analytics for vulnerabilities such as ShellShock using python notebooks and Sysflow trace technologies.",
+    tags: ["Python", "Docker", "VirtualBox", "Git", "Cybersecurity"],
+    imageUrl: sysflowPoster,
   },
   {
-    title: "Word Analytics",
+    title: "Ceph",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Enhanced the 'Ceph balancer status' command to provide detailed information on the changes made during the optimization of a Ceph cluster.",
+    tags: ["Python", "Git", "Data Analytics"],
+    imageUrl: cephPoster,
   },
 ] as const;
 
 export const skillsData = [
+  "Java",
+  "C, C#, C++",
   "HTML",
   "CSS",
   "JavaScript",
@@ -94,14 +96,10 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
+  "Verilog",
+  "MIPS Assembly",
+  "R-Studio",
+  "Godot Game Engine",
 ] as const;
