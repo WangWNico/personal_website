@@ -51,7 +51,7 @@ export default function Project({
         <Image
           src={imageUrl}
           alt="Projects I worked on"
-          quality={95}
+          quality={50}
           className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadown-2xl
             transition
             group-hover:scale-[1.04]
