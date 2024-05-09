@@ -7,7 +7,7 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
 
   return (
@@ -34,11 +34,7 @@ export default function Header() {
                 }
                 )}
                 href={link.hash}
-                onClick={() => {
-                    setActiveSection(link.name);
-                    setTimeOfLastClick(Date.now());
-                  }
-                }
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
                 {link.name === activeSection && (
