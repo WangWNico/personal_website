@@ -31,7 +31,7 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className="bg-[#c4eaf8] max-w-[42rem] border border-black-/9 overflow-hidden sm:pr-8 relative sm:h-[20rem] shadow-2xl 
+        className="bg-[#c4eaf8] sm:max-w-[42rem] max-w-[30rem] border border-black-/9 overflow-hidden sm:pr-8 relative sm:h-[20rem] shadow-2xl 
             rounded-[2.5rem] even:pl-8 hover:bg-[#ADD8E6] transition flex flex-col"
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] max-w-[30%] flex flex-col h-full group-even:ml-[18rem]">
