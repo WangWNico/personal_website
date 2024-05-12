@@ -8,7 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
 
 export default function Experience() {
-    const { ref } = useSectionInView("Experience", 0.8);
+    const { ref } = useSectionInView("Experience", 0.45);
     return (
         <section ref = { ref } id="experience" className='scroll-mt-28 mb-28 sm:mb-40 text-center'>
             <SectionHeading>My experience</SectionHeading>
