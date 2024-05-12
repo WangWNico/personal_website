@@ -33,7 +33,6 @@ function Contact() {
             </p>
 
             <form className='mt-10 flex flex-col' 
-                action={}
             >
                 <input type="email" maxLength={500} required className='h-14 rounded-lg borderBlack px-4' placeholder='Your email'></input>
                 <textarea required maxLength={500} className='h-52 my-3 rounded-lg borderBlack px-4 py-4' placeholder='Your message'/>
