@@ -5,9 +5,12 @@ import SectionHeading from './section-heading'
 import { FaPaperPlane } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmail"
 
 function Contact() {
     const { ref } = useSectionInView("Contact", 0.8);
+
+    
     return (
         <motion.section ref={ref} id="contact" 
             className='scroll-mt-28 sm:mb-28 mb-20 w-[min(100%,38rem)] text-center'
@@ -33,9 +36,27 @@ function Contact() {
             </p>
 
             <form className='mt-10 flex flex-col' 
+                action={async (formData) => {
+                    console.log("Running on client")
+                    console.log(formData.get("senderEmail"));
+                    console.log(formData.get("message"));
+                    await sendEmail(formData);
+                }}
             >
-                <input type="email" maxLength={500} required className='h-14 rounded-lg borderBlack px-4' placeholder='Your email'></input>
-                <textarea required maxLength={500} className='h-52 my-3 rounded-lg borderBlack px-4 py-4' placeholder='Your message'/>
+                <input 
+                    type="email" 
+                    maxLength={500} 
+                    required className='h-14 rounded-lg borderBlack px-4' 
+                    placeholder='Your email'
+                    name='senderEmail'
+                ></input>
+                <textarea 
+                    required 
+                    name='message'
+                    maxLength={500} 
+                    className='h-52 my-3 rounded-lg borderBlack px-4 py-4' 
+                    placeholder='Your message'
+                />
                 <button type="submit" 
                     className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 hover:bg-gray-950
                     text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-10'>
