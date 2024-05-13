@@ -114,7 +114,7 @@ export const projectsData = [
     title: "MIPS Compiler in C",
     description:
       "Created a basic compiler for MIPS Assembly in C code.",
-    tags: ["Python", "Git", "Data Analytics"],
+    tags: ["C", "MIPS"],
     imageUrl: MipsImg,
   },
 ] as const;
