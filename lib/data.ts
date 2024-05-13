@@ -42,7 +42,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Cyber Security Analyst | IBM SysFlow",
-    location: "Troy, TX",
+    location: "Troy, NY",
     description:
       "I documented project steps, troubleshooting, paving the way for group members to set up and participate in the project. My team and I ended up analyzing threats and vulnerabilities by creating graphics and Jupiter Notebooks.",
     icon: React.createElement(CgWorkAlt),
