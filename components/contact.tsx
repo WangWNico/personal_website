@@ -36,10 +36,7 @@ function Contact() {
             </p>
 
             <form className='mt-10 flex flex-col' 
-                action={async (formData) => {
-                    console.log("Running on client")
-                    console.log(formData.get("senderEmail"));
-                    console.log(formData.get("message"));
+                action={ async (formData) => {
                     await sendEmail(formData);
                 }}
             >
@@ -53,7 +50,7 @@ function Contact() {
                 <textarea 
                     required 
                     name='message'
-                    maxLength={500} 
+                    maxLength={5000} 
                     className='h-52 my-3 rounded-lg borderBlack px-4 py-4' 
                     placeholder='Your message'
                 />
