@@ -41,12 +41,20 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Machine Learning Data Synthesis Research Assistant",
+    location: "Troy, NY",
+    description:
+      "I worked with a team of researchers to develop a machine learning model that could synthesize data for the purpose of training other machine learning models. I also worked on a project that involved creating member inference attacks for LLMs.",
+    icon: React.createElement(FaReact),
+    date: "2024 - Present",
+  },
+  {
     title: "Cyber Security Analyst | IBM SysFlow",
     location: "Troy, NY",
     description:
       "I documented project steps, troubleshooting, paving the way for group members to set up and participate in the project. My team and I ended up analyzing threats and vulnerabilities by creating graphics and Jupiter Notebooks.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024",
+    date: "Early 2024",
   },
   {
     title: "Software Developer | IBM CEPH",
@@ -54,7 +62,7 @@ export const experiencesData = [
     description:
       "I worked with a team and mentor from IBM on developing the 'Ceph balancer status' command to provide detailed information on the changes made during the optimization of a Ceph cluster.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "Late 2023",
   },
   {
     title: "Started CS Degree and Rensselaer Polytechnic Institute",
@@ -120,21 +128,30 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Python",
   "Java",
   "C, C#, C++",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
+  "CSS",
+  "SQL",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Python",
   "Framer Motion",
-  "Verilog",
-  "MIPS Assembly",
-  "R-Studio",
   "Godot Game Engine",
+  "PyTorch",
+  "Vercel",
+  "Expo",
+  "Google Firebase",
+  "HuggingFace",
+  "TensorFlow",
+  "Docker",
+  "Linux",
+  "Certified AWS Cloud Practitioner",
+
 ] as const;

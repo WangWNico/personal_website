@@ -49,8 +49,7 @@ export default function Intro() {
             <span className="font-bold">
               Junior at Rensselaer Polytechnic Institute
             </span>
-            . I enjoy building <span className="italic">sites & apps</span>. My
-            current focus is <span className="underline">React (Next.js)</span>.
+            . I enjoy building <span className="italic">sites & apps</span>.
           </motion.h1>
 
           <motion.div
