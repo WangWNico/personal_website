@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import './globals.css'
 import { Inter } from 'next/font/google'
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] });
 

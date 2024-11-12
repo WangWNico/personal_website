@@ -9,7 +9,9 @@ import sysflowPoster from "@/public/SysFlow_Poster.jpg";
 import CPU from "@/public/CPU.jpg";
 import QuestListImg from "@/public/QuestList.jpg";
 import MipsImg from "@/public/mips.png";
-
+import MangoMapsImg from "@/public/MangoMaps.png";
+import TanukiTreatsImg from "@/public/TanukiTreats.png";
+import GitHubImg from "@/public/GitHub.jpg";
 
 
 export const links = [
@@ -83,6 +85,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  { title: "MangoMaps.tech",
+    description:
+      "Data-Driven Disaster Simulation Playground that won best Data Science Hack at HackRPI.",
+    tags: ["React", "GoogleMaps API", "MapBox API", "React", "Next.js", "Git"],
+    imageUrl: MangoMapsImg,
+    link: "https://mangomaps.tech",
+  },
+  {
+    title: "TanukiTreats.com",
+    description: "A snack commercial website offering a worldwide variety of snacks.",
+    tags: ["React", "Next.js", "CSS", "JavaScript", "Git"],
+    imageUrl: TanukiTreatsImg,
+    link: "https://tanukitreats.com",
+  },
   {
     title: "Dungeon Game",
     description:
@@ -124,6 +140,14 @@ export const projectsData = [
       "Created a basic compiler for MIPS Assembly in C code.",
     tags: ["C", "MIPS"],
     imageUrl: MipsImg,
+  },
+  {
+    title: "Check Out My Github",
+    description:
+      "Check out my github for more projects. ",
+    tags: ["Github", "Git"],
+    imageUrl: GitHubImg,
+    link: "https://github.com/WangWNico"
   },
 ] as const;
 
