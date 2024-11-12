@@ -105,6 +105,7 @@ export const projectsData = [
       "I attended a hackathon with some friends where we created a dungeon crawling rpg game.",
     tags: ["Godot", "Git", "Adobe Photoshop", "Adobe Illustrator"],
     imageUrl: gamemenuImg,
+    link: "https://devpost.com/software/dungeon-delve-hooded-blu",
   },
   {
     title: "SysFlow",
@@ -112,6 +113,7 @@ export const projectsData = [
       "Developed analytics for vulnerabilities such as ShellShock using python notebooks and Sysflow trace technologies.",
     tags: ["Python", "Docker", "VirtualBox", "Git", "Cybersecurity"],
     imageUrl: sysflowPoster,
+    link: "https://github.com/WangWNico/sf-lab",
   },
   {
     title: "QuestList Freelancing Startup",
@@ -119,6 +121,7 @@ export const projectsData = [
       "Worked with team to improve the website and user interface.",
     tags: ["Web Design", "Graphic Design", "Web Development"],
     imageUrl: QuestListImg,
+    link: ""
   },
   {
     title: "CPU Architecture Design",
@@ -126,6 +129,7 @@ export const projectsData = [
       "Created a simple CPU architecture.",
     tags: ["Assembly Language", "Verilog", "MIPS Assembly", 'CPU design'],
     imageUrl: CPU,
+    link: "https://github.com/WangWNico/CompOrgProject23",
   },
   {
     title: "Ceph",
@@ -133,6 +137,7 @@ export const projectsData = [
       "Enhanced the 'Ceph balancer status' command to provide detailed information on the changes made during the optimization of a Ceph cluster.",
     tags: ["Python", "Git", "Data Analytics"],
     imageUrl: cephPoster,
+    link: "https://github.com/WangWNico/ceph"
   },
   {
     title: "MIPS Compiler in C",
@@ -140,6 +145,7 @@ export const projectsData = [
       "Created a basic compiler for MIPS Assembly in C code.",
     tags: ["C", "MIPS"],
     imageUrl: MipsImg,
+    link: ""
   },
   {
     title: "Check Out My Github",
