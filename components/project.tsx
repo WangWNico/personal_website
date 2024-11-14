@@ -2,18 +2,18 @@
 
 import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
-
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
   link,
-}: ProjectProps) {
+  index,
+}: ProjectProps & { index: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -32,51 +32,59 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className="bg-[#c4eaf8] sm:max-w-[42rem] max-w-[25rem] border border-black-/9 overflow-hidden sm:pr-8 relative sm:h-[20rem] shadow-2xl 
-        rounded-[2.5rem] even:pl-8 hover:bg-[#ADD8E6] transition flex flex-col"
+        className="bg-[#c4eaf8] border border-black-/9 overflow-hidden sm:pr-8 relative h-fit shadow-2xl max-w-[50rem] rounded-[2.5rem] hover:bg-[#ADD8E6] grid grid-cols-1 md:grid-cols-2"
       >
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] max-w-[30%] flex flex-col h-full sm:group-even:ml-[18rem] group-even:ml-[16rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-        {tags.map((tag, index) => (
-          <li
-            className="bg-black/[0.7] px-3 py-1 sm:text-[0.7rem] text-[0.5rem] uppercase tracking-wider text-white rounded-full"
-            key={index}
-          >
-            {tag}
-          </li>
-        ))}
-          </ul>
-          {link && (
-        <a
-          href={link}
-          className="mt-4 text-blue-500 hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project
-        </a>
-          )}
-        </div>
-        <Image
+        {index % 2 == 0 && <div><Image
           src={imageUrl}
           alt="Projects I worked on"
           quality={50}
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadown-2xl
-        transition
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:-right-[initial] 
-        group-even:-left-40"
-        />
+          width={0}
+          height={0}
+          className="h-[16rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:block -left-20 -bottom-8 hidden absolute hover:rotate-6 hover:scale-105 duration-300"
+          sizes="100vw"
+        /></div>}
+        <div className="sm:pl-10 sm:pr-2 sm:pt-10 flex-col flex gap-3 h-full p-8 py-12 ">
+          <h3 className="text-2xl font-semibold">{title}</h3>
+          <p className=" leading-relaxed text-gray-700">{description}</p>
+          <Image
+            src={imageUrl}
+            alt="Projects I worked on"
+            quality={50}
+            width={0}
+            height={0}
+            className="h-[16rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:hidden hover:scale-105 duration-300"
+            sizes="100vw"
+          />
+          <ul className="flex flex-wrap gap-2 sm:mt-auto">
+            {tags.map((tag, index) => (
+              <li
+                className="bg-black/[0.7] px-3 py-1 sm:text-[0.7rem] text-[0.5rem] uppercase tracking-wider text-white rounded-full "
+                key={index}
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+          {link && (
+            <a
+              href={link}
+              className="mt-4 text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          )}
+        </div>
+        {index % 2 == 1 && <Image
+          src={imageUrl}
+          alt="Projects I worked on"
+          quality={50}
+          width={0}
+          height={0}
+          className="h-[16rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:block hidden absolute -right-20 -bottom-8   hover:-rotate-6 duration-300 hover:scale-105"
+          sizes="100vw"
+        />}
       </section>
     </motion.div>
   );
