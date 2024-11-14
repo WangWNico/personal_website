@@ -40,21 +40,21 @@ export default function Project({
           quality={50}
           width={0}
           height={0}
-          className="h-[16rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:block -left-20 -bottom-8 hidden absolute hover:rotate-6 hover:scale-105 duration-300"
+          className="h-[18rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:block -left-40 -bottom-8 hidden absolute hover:rotate-6 hover:scale-105 duration-300 "
           sizes="100vw"
         /></div>}
         <div className="sm:pl-10 sm:pr-2 sm:pt-10 flex-col flex gap-3 h-full p-8 py-12 ">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className=" leading-relaxed text-gray-700">{description}</p>
-          <Image
+            <Image
             src={imageUrl}
             alt="Projects I worked on"
             quality={50}
             width={0}
             height={0}
-            className="h-[16rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:hidden hover:scale-105 duration-300"
+            className="h-[18rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:hidden hover:scale-105 duration-300"
             sizes="100vw"
-          />
+            />
           <ul className="flex flex-wrap gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -82,7 +82,7 @@ export default function Project({
           quality={50}
           width={0}
           height={0}
-          className="h-[16rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:block hidden absolute -right-20 -bottom-8   hover:-rotate-6 duration-300 hover:scale-105"
+          className="h-[18rem] w-fit rounded-t-lg shadow-2xl transition aspect-[16/9] object-cover mx-auto my-4 md:block hidden absolute -right-40 -bottom-8 hover:-rotate-6 hover:scale-105 duration-300"
           sizes="100vw"
         />}
       </section>

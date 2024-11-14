@@ -8,7 +8,7 @@ import cephPoster from "@/public/Ceph_Poster.jpg";
 import sysflowPoster from "@/public/SysFlow_Poster.jpg";
 import CPU from "@/public/CPU.jpg";
 import QuestListImg from "@/public/QuestList.jpg";
-import MipsImg from "@/public/mips.png";
+import MipsImg from "@/public/mips.jpg";
 import MangoMapsImg from "@/public/MangoMaps.png";
 import TanukiTreatsImg from "@/public/TanukiTreats.png";
 import GitHubImg from "@/public/GitHub.jpg";
@@ -87,14 +87,14 @@ export const experiencesData = [
 export const projectsData = [
   { title: "MangoMaps.tech",
     description:
-      "Data-Driven Disaster Simulation Playground that won best Data Science Hack at HackRPI.",
+      "Utilized Google Places API, MapBox API, and React to create an interactive map that visualizes the impact of natural disasters on local businesses. Awarded Best Data Science Hack at HackRPI. ",
     tags: ["React", "GoogleMaps API", "MapBox API", "React", "Next.js", "Git"],
     imageUrl: MangoMapsImg,
     link: "https://mangomaps.tech",
   },
   {
     title: "TanukiTreats.com",
-    description: "A snack commercial website offering a worldwide variety of snacks.",
+    description: "Built TanukiTreats.com, a commercial site featuring a global selection of snacks. Created with React, Next.js, and CSS for a smooth, engaging user experience and intuitive navigation. ",
     tags: ["React", "Next.js", "CSS", "JavaScript", "Git"],
     imageUrl: TanukiTreatsImg,
     link: "https://tanukitreats.com",
@@ -102,7 +102,7 @@ export const projectsData = [
   {
     title: "Dungeon Game",
     description:
-      "I attended a hackathon with some friends where we created a dungeon crawling rpg game.",
+      "Participated in a hackathon with friends, where we developed a dungeon-crawling RPG using Godot for game development. ",
     tags: ["Godot", "Git", "Adobe Photoshop", "Adobe Illustrator"],
     imageUrl: gamemenuImg,
     link: "https://devpost.com/software/dungeon-delve-hooded-blu",
@@ -118,15 +118,15 @@ export const projectsData = [
   {
     title: "QuestList Freelancing Startup",
     description:
-      "Worked with team to improve the website and user interface.",
-    tags: ["Web Design", "Graphic Design", "Web Development"],
+      "At QuestList, I worked with a team to enhance the website’s user experience by developing interactive, responsive web pages using React and JavaScript. ",
+    tags: ["Web Design", "Web Development", "React", "JavaScript", "Git"],
     imageUrl: QuestListImg,
     link: ""
   },
   {
     title: "CPU Architecture Design",
     description:
-      "Created a simple CPU architecture.",
+    "Designed a CPU architecture using Verilog and MIPS Assembly to simulate core operations, including an ALU, control unit, registers, and memory modules capable of executing basic instructions. ",
     tags: ["Assembly Language", "Verilog", "MIPS Assembly", 'CPU design'],
     imageUrl: CPU,
     link: "https://github.com/WangWNico/CompOrgProject23",
@@ -142,7 +142,7 @@ export const projectsData = [
   {
     title: "MIPS Compiler in C",
     description:
-      "Created a basic compiler for MIPS Assembly in C code.",
+      "Built a basic compiler in C for MIPS Assembly, designed to translate assembly instructions into machine-readable code for execution. This project involved parsing, translating, and optimizing MIPS instructions to ensure accurate and efficient processing. ",
     tags: ["C", "MIPS"],
     imageUrl: MipsImg,
     link: ""
@@ -150,7 +150,7 @@ export const projectsData = [
   {
     title: "Check Out My Github",
     description:
-      "Check out my github for more projects. ",
+      "Explore my GitHub to see more of my projects. ",
     tags: ["Github", "Git"],
     imageUrl: GitHubImg,
     link: "https://github.com/WangWNico"
